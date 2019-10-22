@@ -1,0 +1,17 @@
+.nav {
+  background-color: transparent;
+  display: flex;
+}
+
+.img-nav {
+  width: 50px;
+}
+
+.about-contact,
+a {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-evenly;
+  text-decoration: none;
+  color: black;
+}
