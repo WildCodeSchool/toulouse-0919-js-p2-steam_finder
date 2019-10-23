@@ -1,5 +1,11 @@
 body {
-  background-image: url(./components/pexels-photo-735911.png);
+  background-image: url(../src/images/backgroundmobile.png);
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+@media screen and (min-width: 751px) {
+  body {
+    background-image: url(../src/images/backgrounddesktop.png);
+  }
 }
