@@ -9,17 +9,17 @@ import twitter from '../twitter.png';
 
 function Footer() {
   return (
-    <div className="container">
+    <div className="containerfooter">
       <div className="sectionfooter">
         <div className="titlefooter">STEAM FINDER </div>
-        <p className="texte-footer">
+        <p className="text-footer">
           Reference website which allows you to find your Steam companions
           <br />
           Discover their friends,favorite games,...
         </p>
       </div>
 
-      <div className="reseaux">
+      <div className="network">
         <a href="https://www.wildcodeschool.com/fr-FR">
           <img className="icone" src={wild} alt="wild" />
         </a>
