@@ -1,11 +1,11 @@
 /* eslint-disable no-irregular-whitespace */
 import React from 'react';
 import './style.css';
-import steam from '../steam.png';
-import facebook from '../facebook.png';
-import instagram from '../instagram.png';
-import wild from '../wild.jpg';
-import twitter from '../twitter.png';
+import steam from '../image/steam.png';
+import facebook from '../image/facebook.png';
+import instagram from '../image/instagram.png';
+import wild from '../image/wild.jpg';
+import twitter from '../image/twitter.png';
 
 function Footer() {
   return (
