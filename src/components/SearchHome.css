@@ -1,0 +1,19 @@
+.searchSection h1 {
+  text-align: center;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: aliceblue;
+}
+.searchBar p {
+  margin-bottom: 12px;
+}
+
+.searchButton {
+  font-weight: bolder;
+  border: none;
+  background-color: transparent;
+}
