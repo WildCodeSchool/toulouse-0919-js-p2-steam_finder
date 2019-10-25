@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Wallpoet&display=swap');
+
+/*css commun*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* footer */
+
+.containerfooter {
+  background-color: black;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 0px;
+  width: 100%;
+  margin-top: 2em;
+}
+
+.text-footer {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  font-family: righteous;
+}
+
+.links {
+  font-size: 14px;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: righteous;
+}
+
+.titlefooter {
+  margin-top: 20px;
+  color: #be2f8d;
+  font-family: wallpoet;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.network {
+  display: none;
+}
+
+@media screen and (min-width: 751px) {
+  .containerfooter {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 190px;
+    background-color: black;
+  }
+  .icone {
+    width: 60px;
+    height: 60px;
+    top: 934px;
+    border-radius: 50%;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .network {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sectionfooter {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
