@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Wallpoet&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+.img-home {
+  width: 140px;
+}
+.main-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.typo-title-home {
+  font-family: 'Wallpoet', cursive;
+  font-style: normal;
+  font-weight: normal;
+}
+.search-home {
+  width: 100%;
+  height: 222px;
+  text-align: center;
+  color: aliceblue;
+  font-family: 'Righteous', cursive;
+  background: rgba(0, 0, 0, 0.7);
+  margin-top: 60px;
+  font-size: 1.2em;
+}
+
+@media screen and (min-width: 751px) {
+  .search-home {
+    font-size: 1.4em;
+  }
+  .typo-title-home {
+    font-size: 3em;
+  }
+}
