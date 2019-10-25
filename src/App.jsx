@@ -1,11 +1,14 @@
 import React from 'react';
+
 import './App.css';
 import ErrorPage from './components/ErrorPage';
+import Nav from './components/Nav';
 
 function App() {
   return (
     <div className="App">
-      <ErrorPage />
+    <Nav />
+    <ErrorPage />
     </div>
   );
 }
