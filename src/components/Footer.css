@@ -11,11 +11,14 @@
 /* footer */
 
 .containerfooter {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: black;
   height: 270px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  bottom: 0px;
+  width: 100%;
+  margin-top: 2em;
 }
 
 .text-footer {
@@ -63,8 +66,8 @@
     height: 60px;
     top: 934px;
     border-radius: 50%;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
   }
   .network {
     display: flex;
