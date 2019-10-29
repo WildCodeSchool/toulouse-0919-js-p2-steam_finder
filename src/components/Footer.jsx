@@ -13,7 +13,9 @@ function Footer() {
       <div className="sectionfooter">
         <div className="titlefooter">STEAM FINDER </div>
         <p className="text-footer">
-          Reference website which allows you to find your Steam companions
+          Reference website which allows you 
+          <br />
+          to find your Steam companions
           <br />
           Discover their friends,favorite games,...
         </p>
