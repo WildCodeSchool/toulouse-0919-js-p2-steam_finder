@@ -1,17 +1,20 @@
 import React from 'react';
 import './SearchHome.css';
 import Loupe from '../images/loupe.png';
+import { Link } from 'react-router-dom';
 
 const MAX_LENGTH = 17;
-const regexId = /^[^0-9]$/;
+const regex = /^[^0-9]$/;
 
 class SearchHome extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      playerId: ''
+      playerIds: '',
+      steamids: null
     };
     this.handleChange = this.handleChange.bind(this);
+    this.handleSearch = this.handleSearch.bind(this);
   }
 
   handleChange(event) {
@@ -19,11 +22,15 @@ class SearchHome extends React.Component {
       return;
     }
 
-    if (regexId.test(event.target.value)) {
+    if (regex.test(event.target.value)) {
       return;
     }
 
-    this.setState({ playerId: event.target.value });
+    this.setState({ playerIds: event.target.value });
+  }
+
+  handleSearch(event) {
+    this.setState({ steamids: this.state.playerIds });
   }
 
   render() {
@@ -36,12 +43,14 @@ class SearchHome extends React.Component {
             className="idSearch"
             type="text"
             placeholder="Enter an Id number"
-            value={this.state.playerId}
+            value={this.state.playerIds}
             onChange={this.handleChange}
           />
-          <button className="searchButton" type="submit">
-            <img className="searcheIcon" src={Loupe} alt="search" />
-          </button>
+          <Link to={`/players/${this.state.playerIds}`}>
+            <button className="searchButton" type="submit" onClick={this.handleSearch}>
+              <img className="searcheIcon" src={Loupe} alt="search" />
+            </button>
+          </Link>
         </div>
       </div>
     );
