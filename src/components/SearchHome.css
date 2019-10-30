@@ -1,5 +1,14 @@
+.searchSection {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 30px;
+}
+
 .searchSection h1 {
+  color: white;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .searchBar {
@@ -10,5 +19,10 @@
 .searchButton {
   font-weight: bolder;
   border: none;
-  background-color: transparent;
+  background-color: white;
+}
+
+.textProfil {
+  color: white;
+  margin: 10px;
 }
