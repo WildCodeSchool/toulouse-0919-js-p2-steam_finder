@@ -7,6 +7,8 @@ import Footer from './components/Footer';
 import Players from './components/Players';
 import { Switch, Route } from 'react-router-dom';
 
+
+
 function App() {
   return (
     <div className="App">

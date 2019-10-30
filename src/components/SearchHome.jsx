@@ -36,8 +36,8 @@ class SearchHome extends React.Component {
   render() {
     return (
       <div className="searchSection">
-        <h1>Need to find a SteamUser?</h1>
-        <h1>Search now!</h1>
+        <p>Need to find a SteamUser?</p>
+        <p>Search now!</p>
         <div className="searchBar">
           <input
             className="idSearch"
