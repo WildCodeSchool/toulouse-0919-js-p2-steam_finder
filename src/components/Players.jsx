@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import PlayerProfil from './PlayerProfil';
 import axios from 'axios';
+import PlayerProfil from './PlayerProfil';
 import config from './KeySteam';
 
 const Players = () => {
-  let { id } = useParams();
+  const { id } = useParams();
   const [players, setPlayers] = useState(0);
 
   function getPlayers() {
@@ -21,7 +21,7 @@ const Players = () => {
         setPlayers(data);
       });
   }
-  useEffect(getPlayers);
+  useEffect(getPlayers, []);
 
   return (
     <div>
