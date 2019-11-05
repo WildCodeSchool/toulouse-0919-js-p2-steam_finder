@@ -40,11 +40,10 @@
   font-size: 14px;
 }
 .form-rectangle {
-  height: 450px;
   background-color: rgba(255, 255, 255, 0.6);
-  margin-top: 30px;
-  padding-top: 20px;
-  margin-bottom: 80px;
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-bottom: 60px;
 }
 
 .components-form {
