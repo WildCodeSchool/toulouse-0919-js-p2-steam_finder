@@ -16,7 +16,7 @@ function App() {
           <HomePage />
           <SearchHome />
         </Route>
-        <Route path="/FormContact">
+        <Route path="/Contact">
           <FormContact />
         </Route>
       </Switch>
