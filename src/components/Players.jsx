@@ -5,7 +5,7 @@ import PlayerProfil from './PlayerProfil';
 import config from './KeySteam';
 
 const Players = () => {
-  let { id } = useParams();
+  const { id } = useParams();
   const [players, setPlayers] = useState(0);
 
   function getPlayers() {
@@ -21,7 +21,7 @@ const Players = () => {
         setPlayers(data);
       });
   }
-  useEffect(getPlayers);
+  useEffect(getPlayers, []);
 
   return (
     <div>

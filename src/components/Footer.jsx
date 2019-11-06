@@ -41,13 +41,13 @@ function Footer() {
       </div>
       <div className="sectionfooter">
         <div className="titlefooter"> LINKS </div>
-        <a className="links" href>
+        <a className="links" href="fdthtt">
           Home
         </a>
-        <a className="links" href>
+        <a className="links" href="fdthtt">
           About
         </a>
-        <a className="links" href>
+        <a className="links" href="fdthtt">
           Contact us
         </a>
       </div>

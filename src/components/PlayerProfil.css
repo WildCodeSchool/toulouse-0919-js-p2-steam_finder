@@ -1,19 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Wallpoet&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
 .PlayerProfil {
   text-align: center;
-  margin-top: 50px;
+  margin: 100px 0px;
   background-color: black;
+  color: white;
 }
 
 .avatarPlayer {
   border-radius: 50%;
+  position: relative;
+  bottom: 50px;
 }
 
-.PlayerProfil h1,
-p,
-a {
-  color: white;
+.PlayerProfil p {
+  margin: 20px 0px;
 }
 
 .PlayerProfil a {
   display: block;
+  margin: 20px 0px;
+  padding-bottom: 30px;
 }

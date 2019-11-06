@@ -4,8 +4,11 @@ import './PlayerProfil.css';
 function PlayerProfil({ players }) {
   return (
     <div className="PlayerProfil">
-      <h1>{players.personaname}'s profile</h1>
       <img className="avatarPlayer" src={players.avatarfull} alt={players.personaname} />
+      <h1 className="PlayerName">
+        {players.personaname}
+        's profile
+      </h1>
       <p className="textProfil">
         Id Steam:
         {players.steamid}
@@ -14,8 +17,11 @@ function PlayerProfil({ players }) {
         Pseudo:
         {players.personaname}
       </p>
+      <p>
+        Country:
+        {players.loccountrycode}
+      </p>
       <a href={players.profileurl}>View profil Steam</a>
-      <p>Country:{players.loccountrycode}</p>
     </div>
   );
 }
