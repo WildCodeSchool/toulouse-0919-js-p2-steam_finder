@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import PlayerProfil from './PlayerProfil';
 import axios from 'axios';
+import PlayerProfil from './PlayerProfil';
 import config from './KeySteam';
 
 const Players = () => {
