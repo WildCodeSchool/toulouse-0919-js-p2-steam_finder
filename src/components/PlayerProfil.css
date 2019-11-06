@@ -1,0 +1,19 @@
+.PlayerProfil {
+  text-align: center;
+  margin-top: 50px;
+  background-color: black;
+}
+
+.avatarPlayer {
+  border-radius: 50%;
+}
+
+.PlayerProfil h1,
+p,
+a {
+  color: white;
+}
+
+.PlayerProfil a {
+  display: block;
+}

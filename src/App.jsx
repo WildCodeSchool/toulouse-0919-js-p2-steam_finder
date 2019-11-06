@@ -6,6 +6,8 @@ import { Switch, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import SearchHome from './components/SearchHome';
 import FormContact from './components/FormContact';
+import Players from './components/Players';
+
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         <Route path="/Contact">
           <FormContact />
         </Route>
+        <Route path="/players/:id" children={<Players />} />
       </Switch>
       <Footer />
     </div>
