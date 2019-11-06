@@ -2,11 +2,15 @@ import React from 'react';
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 import HomePage from './components/HomePage';
 import SearchHome from './components/SearchHome';
-import Footer from './components/Footer';
+import FormContact from './components/FormContact';
 import Players from './components/Players';
 import TotalGames from './components/TotalGames';
+
+
+
 
 function App() {
   return (
@@ -21,8 +25,10 @@ function App() {
           <Players />
           <TotalGames />
         </Route>
+        <Route path="/Contact">
+          <FormContact />
+        </Route>
       </Switch>
-
       <Footer />
     </div>
   );
