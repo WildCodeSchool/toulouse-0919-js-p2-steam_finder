@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Wallpoet&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  top: 129px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-form {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.getintouch {
+  font-family: 'Wallpoet';
+  font-size: 30px;
+  padding-top: 20px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.difficulties {
+  padding-top: 10px;
+  font-family: Righteous;
+  font-size: 14px;
+}
+.form-rectangle {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-bottom: 60px;
+}
+
+.components-form {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.img-form {
+  width: 31px;
+  height: 31px;
+}
+
+.text-area,
+.text-form {
+  width: 80%;
+}
+
+.text-area {
+  height: 180px;
+}
+
+.button-form {
+  color: black;
+  border-radius: 10px;
+  width: 88px;
+  height: 29px;
+  margin-top: 10px;
+  font-family: Righteous;
+}
+.error {
+  font-size: 0.7em;
+  display: relative;
+  display: flex;
+  justify-content: center;
+  color: #db2269;
+}
+
+.Submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 751px) {
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 129px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .img-form {
+    width: 3%;
+    height: 3%;
+  }
+  .button-form {
+    width: 168px;
+    height: 33px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .form-rectangle {
+    background-color: transparent;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .text-form,
+  .text-area {
+    width: 532px;
+  }
+  .getintouch {
+    font-size: 37px;
+  }
+
+  .difficulties {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  .components-form {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-form {
+    margin-top: 30px;
+  }
+}

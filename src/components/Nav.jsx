@@ -1,6 +1,7 @@
 import React from 'react';
 import './nav.css';
 import Logo2 from '../images/Logo2.png';
+import { Link } from 'react-router-dom';
 
 function Nav() {
   return (
@@ -11,7 +12,9 @@ function Nav() {
           <a href="#.h">About</a>
         </p>
         <p>
-          <a href="#.h">Contact</a>
+          <Link to="/Contact">
+            <a href="#.h">Contact</a>
+          </Link>
         </p>
       </div>
     </nav>
