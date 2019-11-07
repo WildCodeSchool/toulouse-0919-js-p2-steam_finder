@@ -7,6 +7,7 @@ import SearchHome from './components/SearchHome';
 import Footer from './components/Footer';
 import Players from './components/Players';
 import TotalGames from './components/TotalGames';
+import ListOfGames from './components/ListOfGames';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         <Route path="/players/:id">
           <Players />
           <TotalGames />
+        </Route>
+        <Route path="/games/:id">
+          <ListOfGames />
         </Route>
       </Switch>
 
