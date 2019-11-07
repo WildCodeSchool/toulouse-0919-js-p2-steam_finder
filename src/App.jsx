@@ -9,6 +9,7 @@ import FormContact from './components/FormContact';
 import Players from './components/Players';
 import TotalAchievements from './components/TotalAchievements';
 import TotalGames from './components/TotalGames';
+import ListOfGames from './components/ListOfGames';
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
         </Route>
         <Route path="/Contact">
           <FormContact />
+        </Route>
+        <Route path="/games/:id">
+          <ListOfGames />
         </Route>
       </Switch>
       <Footer />
