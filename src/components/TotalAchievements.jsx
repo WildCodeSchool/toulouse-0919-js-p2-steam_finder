@@ -4,7 +4,7 @@ import axios from 'axios';
 import config from './KeySteam';
 import AchievementCount from './AchievementCount';
 import './NbGames.css';
-import LogoAchieved from './';
+import Achieved from '../images/Achieved.png';
 
 function TotalAchievements() {
   const { id } = useParams();
@@ -28,7 +28,7 @@ function TotalAchievements() {
 
   return (
     <div className="nbAchievements">
-      <img src="" />
+      <img src={Achieved} />
       {achievements && <AchievementCount achievement={achievements} />}
     </div>
   );
