@@ -9,6 +9,7 @@ import FormContact from './components/FormContact';
 import Players from './components/Players';
 import TotalAchievements from './components/TotalAchievements';
 import TotalGames from './components/TotalGames';
+import TotalFriends from './components/TotalFriends';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/players/:id">
           <Players />
           <TotalGames />
+          <TotalFriends />
           <TotalAchievements />
         </Route>
         <Route path="/Contact">
