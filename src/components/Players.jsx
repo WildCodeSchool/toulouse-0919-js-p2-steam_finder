@@ -27,7 +27,7 @@ const Players = () => {
         }
       });
   }
-  useEffect(getPlayers);
+  useEffect(getPlayers, []);
 
   return (
     <div>
