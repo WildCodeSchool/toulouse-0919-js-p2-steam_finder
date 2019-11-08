@@ -12,7 +12,6 @@ import TotalGames from './components/TotalGames';
 import TotalFriends from './components/TotalFriends';
 import ListOfGames from './components/ListOfGames';
 
-
 function App() {
   return (
     <div className="App">

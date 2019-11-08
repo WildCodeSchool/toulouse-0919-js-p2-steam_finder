@@ -27,8 +27,8 @@ function TotalAchievements() {
   useEffect(() => GetAchievements(), []);
 
   return (
-    <div className="nbAchievements">
-      <img src={Achieved} />
+    <div className="avatar_Button">
+      <img src={Achieved} className="avatar-image" />
       {achievements && <AchievementCount achievement={achievements} />}
     </div>
   );
