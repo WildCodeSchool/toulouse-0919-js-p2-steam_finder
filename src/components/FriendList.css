@@ -1,0 +1,25 @@
+.FriendName {
+  align-self: flex-end;
+  margin-left: 20px;
+  font-size: 0.8em;
+}
+
+.OneFriend {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  margin: 10px 0px;
+}
+
+.friendButton {
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 751px) {
+  .OneFriend {
+    margin: 10px 15px;
+  }
+}

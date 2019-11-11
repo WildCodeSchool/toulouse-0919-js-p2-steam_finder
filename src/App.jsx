@@ -11,7 +11,7 @@ import TotalAchievements from './components/TotalAchievements';
 import TotalGames from './components/TotalGames';
 import TotalFriends from './components/TotalFriends';
 import ListOfGames from './components/ListOfGames';
-
+import DisplayFriendList from './components/DisplayFriendList';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <Nav />
       <Switch>
         <Route exact path="/">
-          <HomePage />
+          <HomePage />A
           <SearchHome />
         </Route>
         <Route path="/players/:id">
@@ -33,6 +33,9 @@ function App() {
         </Route>
         <Route path="/games/:id">
           <ListOfGames />
+        </Route>
+        <Route path="/friends/:id">
+          <DisplayFriendList />
         </Route>
       </Switch>
       <Footer />
