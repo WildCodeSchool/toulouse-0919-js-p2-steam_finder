@@ -1,19 +1,19 @@
 import React from 'react';
 import './nav.css';
-import Logo2 from '../images/Logo2.png';
 import { Link } from 'react-router-dom';
+import Logo2 from '../images/Logo2.png';
 
 function Nav() {
   return (
     <nav className="nav">
-      <img src={Logo2} alt="Website logo" className="img-nav" />
+      <Link to="/">
+        <img src={Logo2} alt="Website logo" className="img-nav" />
+      </Link>
       <div className="about-contact">
-        <p>
-          <a href="#.h">About</a>
-        </p>
+        <p className="link-navbar">About </p>
         <p>
           <Link to="/Contact">
-            <a href="#.h">Contact</a>
+            <p className="link-navbar">Contact</p>
           </Link>
         </p>
       </div>
