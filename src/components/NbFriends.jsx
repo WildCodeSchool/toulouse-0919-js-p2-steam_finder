@@ -1,7 +1,7 @@
 import React from 'react';
 import './NbFriends.css';
+import person from '../images/friend.png';
 
-// eslint-disable-next-line react/prop-types
 function NbFriends({ nbfriends }) {
   if (nbfriends === 'error') {
     return (
@@ -12,11 +12,11 @@ function NbFriends({ nbfriends }) {
   }
   return (
     <div className="Friends">
-      <button className="FriendsButton" type="button">
+      <button className="avatar_Button" type="button">
+        <img className="avatar-image" src={person} alt="avatar friend" />
         {nbfriends} friends
       </button>
     </div>
   );
 }
-
 export default NbFriends;
