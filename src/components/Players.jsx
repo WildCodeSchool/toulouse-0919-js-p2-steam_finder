@@ -29,11 +29,6 @@ const Players = () => {
   }
   useEffect(getPlayers, []);
 
-  return (
-    <div>
-      <PlayerProfil players={players} />
-      {redirection ? <ErrorPage /> : ''}
-    </div>
-  );
+  return <div>{redirection ? <ErrorPage /> : <PlayerProfil players={players} />}</div>;
 };
 export default Players;

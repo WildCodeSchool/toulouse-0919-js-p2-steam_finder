@@ -22,7 +22,9 @@ function App() {
           <HomePage />
           <SearchHome />
         </Route>
-        <Route path="/error-page" children={<ErrorPage />} />
+        <Route path="/error-page">
+          <ErrorPage />
+        </Route>
         <Route path="/players/:id">
           <Players />
           <TotalGames />
