@@ -32,10 +32,10 @@ const FriendInfo = props => {
       <div className="right">
         <p className="Surname">{player.personaname}</p>
         <p className="ID">{player.steamid}</p>
-        <a href={`/players/${player.steamid}`} className="View">
+        <a href={`/players/${player.steamid}`} className="View-profile">
           View profile
         </a>
-        <a href={player.profileurl} className="View">
+        <a href={player.profileurl} className="View-profile">
           View profile STEAM
         </a>
       </div>

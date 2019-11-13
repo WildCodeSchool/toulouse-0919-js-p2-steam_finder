@@ -1,12 +1,7 @@
-.OneFriend {
+.One-Friend {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   margin: 10px 0px;
-}
-
-.friendButton {
-  border: none;
-  background-color: transparent;
 }
 
 @media screen and (min-width: 751px) {

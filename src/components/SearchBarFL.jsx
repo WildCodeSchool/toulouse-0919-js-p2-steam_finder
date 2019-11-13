@@ -34,7 +34,7 @@ class SearchBarFL extends React.Component {
 
   render() {
     return (
-      <div className="search-container">
+      <div className="searchContainer">
         <form className="form" onSubmit={this.handleSearch}>
           <input
             type="text"
