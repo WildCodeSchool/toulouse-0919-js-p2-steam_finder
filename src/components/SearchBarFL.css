@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Wallpoet&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+.search-container {
+  width: 490px;
+  margin-bottom: 70px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input#search-bar {
+  width: 100%;
+  height: 45px;
+  word-spacing: 380px;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.searchButton {
+  height: 44px;
+  border-radius: 10%;
+}
+
+@media screen and(min-width: 751px) {
+  .search-container {
+    width: 490px;
+  }
+
+  input#search-bar {
+    width: 100%;
+    height: 45px;
+    word-spacing: 390px;
+    font-size: 1rem;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+}

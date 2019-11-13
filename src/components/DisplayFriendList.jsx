@@ -9,6 +9,7 @@ import SearchBarFL from './SearchBarFL';
 const DisplayFriendList = () => {
   const { id } = useParams();
   const [DisplayFriends, setDisplayFriends] = useState(0);
+
   async function getFriendList() {
     await axios
       .get(`http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?`, {
@@ -19,31 +20,10 @@ const DisplayFriendList = () => {
       })
       .then(response => response.data.friendslist.friends)
       .then(data => {
-        const listItems = data.map(friends => ({
-          steamid: friends.steamid
-        }));
-
-        setDisplayFriends(listItems);
+        setDisplayFriends(data);
       });
   }
   useEffect(() => getFriendList(), []);
-
-  /*  const [players, setPlayers] = useState(0);
-  function getPlayers() {
-    axios
-      .get(`http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?`, {
-        params: {
-          key: config.key,
-          steamids: id
-        }
-      })
-      .then(response => response.data.response.players[0])
-      .then(data => {
-        setPlayers(data);
-      });
-  }
-  useEffect(getPlayers, []);
-*/
 
   return (
     <div>
@@ -51,9 +31,7 @@ const DisplayFriendList = () => {
       <div>
         <SearchBarFL />
       </div>
-      <div className="wrapFriends">
-        {DisplayFriends && <FriendList DisplayFriends={DisplayFriends} />}
-      </div>
+      <div className="wrapFriends">{DisplayFriends && <FriendList Friends={DisplayFriends} />}</div>
     </div>
   );
 };

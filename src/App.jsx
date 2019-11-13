@@ -19,7 +19,7 @@ function App() {
       <Nav />
       <Switch>
         <Route exact path="/">
-          <HomePage />A
+          <HomePage />
           <SearchHome />
         </Route>
         <Route path="/players/:id">
