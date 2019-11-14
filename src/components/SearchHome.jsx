@@ -21,7 +21,6 @@ class SearchHome extends React.Component {
     if (regex.test(event.target.value)) {
       event.target.value = '';
     }
-
     if (event.target.value.length > MAX_LENGTH) {
       return;
     }

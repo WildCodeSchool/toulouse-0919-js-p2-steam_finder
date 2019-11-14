@@ -23,6 +23,16 @@
   background-color: transparent;
 }
 
+.style-gamelist {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.trophy-game {
+  margin-right: 10%;
+}
+
 @media screen and (min-width: 751px) {
   .imgGame {
     height: 4em;
@@ -30,5 +40,8 @@
 
   .OneGame {
     margin: 10px 15px;
+  }
+  .trophy-game {
+    margin-right: 5%;
   }
 }

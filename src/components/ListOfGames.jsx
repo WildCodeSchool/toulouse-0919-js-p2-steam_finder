@@ -34,7 +34,7 @@ const ListOfGames = () => {
   return (
     <div>
       <h1 className="gameTitle">Games list</h1>
-      <div className="wrapGames">{ownedGames && <GamesList ownedGames={ownedGames} />}</div>
+      <div className="wrapGames">{ownedGames && <GamesList ownedGames={ownedGames} />} </div>
     </div>
   );
 };
