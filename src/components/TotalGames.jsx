@@ -17,7 +17,10 @@ const TotalGames = () => {
         }
       })
       .then(response => response.data.response.game_count)
-      .then(setGames);
+      .then(setGames)
+      .catch(err => {
+        setGames('error');
+      });
   }
 
   useEffect(() => getGames(), []);

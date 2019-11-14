@@ -38,6 +38,7 @@
   padding-top: 10px;
   font-family: Righteous;
   font-size: 14px;
+  margin: 30px auto;
 }
 .form-rectangle {
   background-color: rgba(255, 255, 255, 0.6);
@@ -95,7 +96,7 @@
     align-items: center;
     flex-direction: column;
     top: 129px;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     margin-left: auto;
     margin-right: auto;
   }
@@ -111,9 +112,10 @@
   }
 
   .form-rectangle {
-    background-color: transparent;
-    width: 100%;
-    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 40%;
+    margin-top: 30px;
+    border-radius: 10px;
   }
   .text-form,
   .text-area {
@@ -121,6 +123,7 @@
   }
   .getintouch {
     font-size: 37px;
+    margin: 30px auto;
   }
 
   .difficulties {
@@ -134,5 +137,9 @@
 
   .button-form {
     margin-top: 30px;
+  }
+
+  .Submit {
+    padding-bottom: 30px;
   }
 }

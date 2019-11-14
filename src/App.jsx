@@ -13,6 +13,8 @@ import TotalGames from './components/TotalGames';
 import TotalFriends from './components/TotalFriends';
 import ListOfGames from './components/ListOfGames';
 import DisplayFriendList from './components/DisplayFriendList';
+import About from './components/About';
+
 
 function App() {
   return (
@@ -23,14 +25,21 @@ function App() {
           <HomePage />
           <SearchHome />
         </Route>
-        <Route path="/error-page" children={<ErrorPage />} />
+        <Route path="/error-page">
+          <ErrorPage />
+        </Route>
         <Route path="/players/:id">
           <Players />
           <TotalGames />
           <TotalFriends />
           <TotalAchievements />
         </Route>
+        <Route path="/About">
+          <About />
+          <FormContact />
+        </Route>
         <Route path="/Contact">
+          <About />
           <FormContact />
         </Route>
         <Route path="/games/:id">
