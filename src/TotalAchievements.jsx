@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import config from './KeySteam';
-import AchievementCount from './AchievementCount';
-import './NbGames.css';
+import AchievementCount from './components/AchievementCount';
 
 function TotalAchievements() {
   const { id } = useParams();
@@ -21,9 +20,6 @@ function TotalAchievements() {
       .then(data => {
         const newArr = data.filter(achievement => achievement.achieved);
         setAchievements(newArr);
-      })
-      .catch(err => {
-        setAchievements('error');
       });
   }
   useEffect(() => GetAchievements(), []);
