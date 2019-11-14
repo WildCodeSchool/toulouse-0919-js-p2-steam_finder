@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Wallpoet&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+.friendcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.FriendAvatar {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+}
+
+.Surname {
+  font-weight: bold;
+  padding-top: 10px;
+  font-size: 26px;
+}
+
+.ID {
+  padding-top: 20px;
+  font-size: 16px;
+}
+
+.View-profile {
+  font-style: italic;
+  text-decoration: underline;
+  padding-bottom: 10px;
+  font-size: 16px;
+}

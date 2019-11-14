@@ -1,0 +1,20 @@
+.friendTitle {
+  color: white;
+  font-family: Wallpoet;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+@media screen and (min-width: 751px) {
+  .wrapFriends {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}

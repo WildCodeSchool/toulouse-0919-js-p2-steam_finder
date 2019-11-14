@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Redirect } from 'react-router-dom';
 import axios from 'axios';
 import PlayerProfil from './PlayerProfil';
 import config from './KeySteam';
@@ -27,13 +27,10 @@ const Players = () => {
         }
       });
   }
-  useEffect(getPlayers, []);
 
-  return (
-    <div>
-      <PlayerProfil players={players} />
-      {redirection ? <ErrorPage /> : ''}
-    </div>
-  );
+  useEffect(() => getPlayers(), []);
+
+  return <div>{redirection ? <ErrorPage /> : <PlayerProfil players={players} />}</div>;
 };
+
 export default Players;

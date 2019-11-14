@@ -7,6 +7,14 @@ import Gameprofil from '../images/Game-profil.png';
 function NbGames({ nbgames }) {
   const { id } = useParams();
 
+  if (nbgames === 'error') {
+    return (
+      <div className="error-message">
+        Sorry, you cannot access to the number of games of this profile
+      </div>
+    );
+  }
+
   return (
     <div className="Games">
       <NavLink className="linkGames" to={`/games/${id}`}>

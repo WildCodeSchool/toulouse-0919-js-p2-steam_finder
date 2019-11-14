@@ -1,6 +1,8 @@
 import React from 'react';
 import './ErrorPage.css';
 import LogoRobot from '../../images/broken-robot_icon-icons.com_55288.png';
+import SearchHome from '../SearchHome';
+import '../SearchHome.css';
 
 function ErrorPage() {
   return (
@@ -10,9 +12,7 @@ function ErrorPage() {
       <p className="p2">this player</p>
       <p className="p3">Retry please !</p>
       <img className="brokenRobot" src={LogoRobot} alt="LogoRobot" />
-      <div className="searchBarStyle">
-        <input className="searchBar" type="text" />
-      </div>
+      <SearchHome />
     </div>
   );
 }

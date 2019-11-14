@@ -1,0 +1,11 @@
+.One-Friend {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  margin: 10px 0px;
+}
+
+@media screen and (min-width: 751px) {
+  .OneFriend {
+    margin: 10px 15px;
+  }
+}
