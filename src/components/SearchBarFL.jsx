@@ -44,7 +44,7 @@ class SearchBarFL extends React.Component {
           />
           <Link className="linkButton" to={`/players/${this.state.playerIds}`}>
             <button className="searchButton" type="submit" onSubmit={this.handleSearch}>
-              <img className="searcheIcon" src={Loupe} alt="search" />
+              <img className="searchIcon" src={Loupe} alt="search" />
             </button>
           </Link>
         </form>

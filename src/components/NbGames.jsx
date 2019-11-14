@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useParams, NavLink } from 'react-router-dom';
 import './NbGames.css';
+import Gameprofil from '../images/Game-profil.png';
 
 // eslint-disable-next-line react/prop-types
 function NbGames({ nbgames }) {
@@ -8,12 +9,12 @@ function NbGames({ nbgames }) {
 
   return (
     <div className="Games">
-      <Link className="linkGames" to={`/games/${id}`}>
-        <button className="GamesButton" type="submit">
-          {nbgames}
-          games
+      <NavLink className="linkGames" to={`/games/${id}`}>
+        <button className="avatar_Button" type="submit">
+          <img src={Gameprofil} className="avatar-image" />
+          {nbgames} games
         </button>
-      </Link>
+      </NavLink>
     </div>
   );
 }

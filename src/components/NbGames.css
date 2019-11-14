@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Wallpoet&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 
-.GamesButton {
+.GamesButton,
+.nbAchievements {
   display: block;
   background-color: black;
   color: white;

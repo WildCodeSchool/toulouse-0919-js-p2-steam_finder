@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import config from './KeySteam';
 import AchievementCount from './AchievementCount';
+import './NbGames.css';
+import Achieved from '../images/Achieved.png';
 
 function TotalAchievements() {
   const { id } = useParams();
@@ -24,7 +26,12 @@ function TotalAchievements() {
   }
   useEffect(() => GetAchievements(), []);
 
-  return <div>{achievements && <AchievementCount achievement={achievements} />}</div>;
+  return (
+    <div className="avatar_Button">
+      <img src={Achieved} className="avatar-image" />
+      {achievements && <AchievementCount achievement={achievements} />}
+    </div>
+  );
 }
 
 export default TotalAchievements;

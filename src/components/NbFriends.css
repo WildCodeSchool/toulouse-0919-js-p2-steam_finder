@@ -1,24 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Wallpoet&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
-
-.FriendsButton {
+.avatar_Button {
   display: block;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   color: white;
-  width: 90%;
   margin: 50px auto;
   text-align: center;
   padding: 30px 0px;
-  border-radius: 15px;
   border: none;
   font-family: Righteous;
   font-size: 30px;
+  width: 298px;
+  height: 94px;
+  border-radius: 10px;
 }
-
+.avatar-image {
+  width: 38x;
+  height: 38px;
+  margin-right: 20px;
+}
 .error-message {
   display: block;
-  background-color: black;
-  color: red;
+  background-color: rgba(14, 19, 33, 0.7);
+  color: #be2f8d;
   width: 90%;
   margin: 50px auto;
   text-align: center;
@@ -26,12 +34,22 @@
   border-radius: 15px;
   border: none;
   font-family: Righteous;
-  font-size: 30px;
+  font-size: 15px;
   font-style: italic;
 }
 
 @media screen and (min-width: 751px) {
   .error-message {
-    font-size: 15px;
+    font-size: 30px;
+  }
+  .avatar_Button {
+    width: 431px;
+    height: 148px;
+    border-radius: none;
+  }
+  .avatar-image {
+    width: 64x;
+    height: 64px;
+    margin-right: 20px;
   }
 }

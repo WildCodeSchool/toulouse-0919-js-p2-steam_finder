@@ -1,8 +1,10 @@
 import React from 'react';
 import './NbFriends.css';
+import { useParams, NavLink } from 'react-router-dom';
+import person from '../images/friend.png';
 
-// eslint-disable-next-line react/prop-types
 function NbFriends({ nbfriends }) {
+  const { id } = useParams();
   if (nbfriends === 'error') {
     return (
       <div className="error-message">
@@ -12,11 +14,13 @@ function NbFriends({ nbfriends }) {
   }
   return (
     <div className="Friends">
-      <button className="FriendsButton" type="button">
-        {nbfriends} friends
-      </button>
+      <NavLink className="linkFriedns" to={`/friends/${id}`}>
+        <button className="avatar_Button" type="button">
+          <img className="avatar-image" src={person} alt="avatar friend" />
+          {nbfriends} friends
+        </button>
+      </NavLink>
     </div>
   );
 }
-
 export default NbFriends;
