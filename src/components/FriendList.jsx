@@ -4,7 +4,7 @@ import FriendInfo from './FriendInfo';
 
 const FriendList = ({ Friends }) =>
   Friends.map(friend => (
-    <div className="One-Friend">
+    <div key={friend.steamid} className="One-Friend">
       <FriendInfo friendId={friend.steamid} />
     </div>
   ));

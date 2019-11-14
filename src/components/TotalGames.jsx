@@ -23,7 +23,9 @@ const TotalGames = () => {
       });
   }
 
-  useEffect(() => getGames(), []);
+  useEffect(() => {
+    getGames();
+  }, []);
 
   return (
     <div>

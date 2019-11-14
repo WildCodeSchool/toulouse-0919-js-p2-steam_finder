@@ -3,7 +3,7 @@ import './GamesList.css';
 
 const GamesList = ({ ownedGames }) =>
   ownedGames.map(game => (
-    <div className="OneGame">
+    <div key={ownedGames.name} className="OneGame">
       <button className="gameButton" type="button">
         <img
           className="imgGame"

@@ -26,7 +26,9 @@ function TotalAchievements() {
         setAchievements('error');
       });
   }
-  useEffect(() => GetAchievements(), []);
+  useEffect(() => {
+    GetAchievements();
+  }, []);
 
   return <div>{achievements && <AchievementCount achievement={achievements} />}</div>;
 }
