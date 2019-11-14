@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Loupe from '../images/loupe.png';
 
 const MAX_LENGTH = 17;
-const regex = /^[^0-9]$/;
+const regex = /[^0-9]/g;
 
 class SearchHome extends React.Component {
   constructor(props) {
@@ -23,7 +23,7 @@ class SearchHome extends React.Component {
     }
 
     if (regex.test(event.target.value)) {
-      return;
+      event.target.value = '';
     }
 
     this.setState({ playerIds: event.target.value });
@@ -39,18 +39,20 @@ class SearchHome extends React.Component {
         <p>Need to find a SteamUser?</p>
         <p>Search now!</p>
         <div className="searchBar">
-          <input
-            className="idSearch"
-            type="text"
-            placeholder="Enter an Id number"
-            value={this.state.playerIds}
-            onChange={this.handleChange}
-          />
-          <Link className="linkButton" to={`/players/${this.state.playerIds}`}>
-            <button className="searchButton" type="submit" onClick={this.handleSearch}>
-              <img className="searcheIcon" src={Loupe} alt="search" />
-            </button>
-          </Link>
+          <form onSubmit={this.handleSearch}>
+            <input
+              className="idSearch"
+              type="text"
+              placeholder="Enter an Id number"
+              value={this.state.playerIds}
+              onChange={this.handleChange}
+            />
+            <Link className="linkButton" to={`/players/${this.state.playerIds}`}>
+              <button className="searchButton" type="submit" onSubmit={this.handleSearch}>
+                <img className="searcheIcon" src={Loupe} alt="search" />
+              </button>
+            </Link>
+          </form>
         </div>
       </div>
     );
