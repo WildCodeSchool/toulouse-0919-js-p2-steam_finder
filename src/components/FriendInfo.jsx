@@ -22,7 +22,9 @@ const FriendInfo = props => {
       });
   }
 
-  useEffect(() => getAvatar(), []);
+  useEffect(() => {
+    getAvatar();
+  }, []);
 
   return (
     <div className="friendcontainer">

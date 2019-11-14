@@ -4,7 +4,8 @@ import TotalAchievements from './TotalAchievements';
 
 const GamesList = ({ ownedGames }) =>
   ownedGames.map(game => (
-    <div className="OneGame">
+
+    <div key={ownedGames.name} className="OneGame">
       <div className="style-gamelist">
         <button className="gameButton" type="button">
           <img

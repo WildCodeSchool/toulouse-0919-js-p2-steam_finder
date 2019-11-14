@@ -23,7 +23,9 @@ const DisplayFriendList = () => {
         setDisplayFriends(data);
       });
   }
-  useEffect(() => getFriendList(), []);
+  useEffect(() => {
+    getFriendList();
+  }, []);
 
   return (
     <div>
@@ -31,7 +33,9 @@ const DisplayFriendList = () => {
       <div>
         <SearchBarFL />
       </div>
-      <div className="wrapFriends">{DisplayFriends && <FriendList Friends={DisplayFriends} />}</div>
+      <div key={DisplayFriends.friends} className="wrapFriends">
+        {DisplayFriends && <FriendList Friends={DisplayFriends} />}
+      </div>
     </div>
   );
 };

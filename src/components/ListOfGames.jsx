@@ -29,12 +29,16 @@ const ListOfGames = () => {
         setOwnedGames(listItems);
       });
   }
-  useEffect(() => getGamesList(), []);
+  useEffect(() => {
+    getGamesList();
+  }, []);
 
   return (
-    <div>
+    <div key={ownedGames.appid}>
       <h1 className="gameTitle">Games list</h1>
-      <div className="wrapGames">{ownedGames && <GamesList ownedGames={ownedGames} />} </div>
+      <div key={ownedGames.name} className="wrapGames">
+        {ownedGames && <GamesList ownedGames={ownedGames} />}
+      </div>
     </div>
   );
 };

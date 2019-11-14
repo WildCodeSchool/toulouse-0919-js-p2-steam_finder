@@ -30,7 +30,10 @@ const TotalAchievements = props => {
       })
       .catch(() => setAchievements(null));
   }
-  useEffect(() => GetAchievements(), []);
+
+  useEffect(() => {
+    GetAchievements();
+  }, []);
   const displayAchievements = achievements ? <AchievementCount achievement={achievements} /> : null;
   const styleAchivied = displayAchievements ? 'avatar-image' : 'avatar-off';
   const styleButton = displayAchievements ? 'avatar-button' : 'avatar-off';
@@ -42,6 +45,7 @@ const TotalAchievements = props => {
     </div>
   );
 };
+
 
 
 export default TotalAchievements;
