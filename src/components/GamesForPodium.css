@@ -1,0 +1,13 @@
+.timePodium {
+  margin: 5px auto;
+}
+
+.timePodium span {
+  color: #be2f8d;
+}
+
+.namePodium {
+  margin: 5px auto;
+  font-weight: bold;
+  font-size: 1em;
+}

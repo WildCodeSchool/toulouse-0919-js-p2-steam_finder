@@ -1,9 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Wallpoet&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
 .podiumOfTop {
-  display: flex;
-  justify-content: space-evenly;
+  text-align: center;
+}
+
+.sectionPodium {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 40px auto;
+}
+
+.GamesOfTop {
+  margin: 20px auto;
 }
 
 .titlePodium {
   text-align: center;
-  margin: 40px auto;
+  margin-bottom: 30px;
+  font-family: Wallpoet;
+  font-size: 30px;
+
+  font-style: normal;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 751px) {
+  .podiumOfTop {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .titlePodium {
+    text-align: center;
+    margin: 40px auto;
+  }
 }
