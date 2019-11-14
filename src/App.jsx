@@ -13,6 +13,7 @@ import TotalGames from './components/TotalGames';
 import TotalFriends from './components/TotalFriends';
 import ListOfGames from './components/ListOfGames';
 import About from './components/About';
+import Podium from './components/Podium';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         </Route>
         <Route path="/players/:id">
           <Players />
+          <Podium />
           <TotalGames />
           <TotalFriends />
           <TotalAchievements />
