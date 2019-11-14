@@ -12,6 +12,7 @@ import TotalAchievements from './components/TotalAchievements';
 import TotalGames from './components/TotalGames';
 import TotalFriends from './components/TotalFriends';
 import ListOfGames from './components/ListOfGames';
+import About from './components/About';
 
 function App() {
   return (
@@ -31,7 +32,12 @@ function App() {
           <TotalFriends />
           <TotalAchievements />
         </Route>
+        <Route path="/About">
+          <About />
+          <FormContact />
+        </Route>
         <Route path="/Contact">
+          <About />
           <FormContact />
         </Route>
         <Route path="/games/:id">
