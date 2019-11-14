@@ -68,10 +68,10 @@ class FormContact extends React.Component {
       <div className="container">
         <div className="title-form">
           <h3 className="getintouch">Contact Us</h3>
-          <h4 className="difficulties">
+          <p className="difficulties">
             Don't hesitate to contact us if you encounter difficulties.That's why this page is here.
             For those able to complete a form...
-          </h4>
+          </p>
         </div>
         <form className="form-rectangle" onSubmit={this.handleSubmit} noValidate>
           <div className="components-form">

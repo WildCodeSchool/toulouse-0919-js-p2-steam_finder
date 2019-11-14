@@ -1,3 +1,6 @@
+.stylepage {
+  margin-top: 30px;
+}
 .friendTitle {
   color: white;
   font-family: Wallpoet;
@@ -16,5 +19,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
+  }
+
+  .friendTitle {
+    font-size: 40px;
+  }
+
+  .stylepage {
+    margin-top: 60px;
   }
 }

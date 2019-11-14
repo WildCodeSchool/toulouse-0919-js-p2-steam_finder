@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Wallpoet&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
-
 .podiumOfTop {
   text-align: center;
+  padding-bottom: 1em;
 }
 
 .sectionPodium {
@@ -20,7 +20,7 @@
   margin-bottom: 30px;
   font-family: Wallpoet;
   font-size: 30px;
-
+  padding-top: 1em;
   font-style: normal;
   font-weight: normal;
 }
@@ -30,9 +30,9 @@
     display: flex;
     justify-content: space-evenly;
   }
-
   .titlePodium {
     text-align: center;
     margin: 40px auto;
+    font-size: 40px;
   }
 }

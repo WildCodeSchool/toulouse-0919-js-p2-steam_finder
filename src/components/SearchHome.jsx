@@ -1,7 +1,7 @@
 import React from 'react';
 import './SearchHome.css';
 import { Link } from 'react-router-dom';
-import Loupe from '../images/loupe.png';
+import Loupe from '../images/loupe2.png';
 
 const MAX_LENGTH = 17;
 const regex = /[^0-9]/g;
@@ -38,7 +38,7 @@ class SearchHome extends React.Component {
         <p>Need to find a SteamUser?</p>
         <p>Search now!</p>
         <div className="searchBar">
-          <form onSubmit={this.handleSearch}>
+          <form className="containersearch" onSubmit={this.handleSearch}>
             <input
               className="idSearch"
               type="text"
@@ -48,7 +48,7 @@ class SearchHome extends React.Component {
             />
             <Link className="linkButton" to={`/players/${this.state.playerIds}`}>
               <button className="searchButton" type="submit" onSubmit={this.handleSearch}>
-                <img className="searcheIcon" src={Loupe} alt="search" />
+                <img className="loupe" src={Loupe} alt="search" />
               </button>
             </Link>
           </form>
