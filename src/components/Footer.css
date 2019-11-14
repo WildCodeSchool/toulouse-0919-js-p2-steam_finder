@@ -6,13 +6,13 @@
 * {
   padding: 0;
   margin: 0;
+  text-decoration: none;
 }
 
 /* footer */
 
 .containerfooter {
   background-color: black;
-  height: 270px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,6 +76,5 @@
 
   .sectionfooter {
     margin-right: 5%;
-    margin-left: 5%;
   }
 }

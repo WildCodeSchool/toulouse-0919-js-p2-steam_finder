@@ -1,6 +1,7 @@
 /* eslint-disable no-irregular-whitespace */
 import React from 'react';
 import './Footer.css';
+import { NavLink } from 'react-router-dom';
 import steam from '../images/steam.png';
 import facebook from '../images/facebook.png';
 import instagram from '../images/instagram.png';
@@ -41,15 +42,15 @@ function Footer() {
       </div>
       <div className="sectionfooter">
         <div className="titlefooter"> LINKS </div>
-        <a className="links" href>
+        <NavLink to="/" className="links">
           Home
-        </a>
-        <a className="links" href>
+        </NavLink>
+        <NavLink to="/About" className="links">
           About
-        </a>
-        <a className="links" href>
+        </NavLink>
+        <NavLink to="/Contact" className="links">
           Contact us
-        </a>
+        </NavLink>
       </div>
     </div>
   );

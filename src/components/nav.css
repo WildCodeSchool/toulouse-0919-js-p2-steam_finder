@@ -9,13 +9,17 @@
 }
 
 .about-contact,
-a {
+.link-navbar {
   display: flex;
   flex-basis: 100%;
   text-decoration: none;
   color: white;
-  margin: 8px 12px 0px 12px;
+  margin: 0px 12px 0px 12px;
   justify-content: flex-end;
+}
+
+.link-navbar {
+  margin-top: 25px;
 }
 
 @media screen and (min-width: 751px) {
@@ -25,7 +29,6 @@ a {
   .about-contact p {
     margin-left: 12px;
     margin-right: 50px;
-    margin-top: 30px;
   }
   .img-nav {
     width: 70px;
