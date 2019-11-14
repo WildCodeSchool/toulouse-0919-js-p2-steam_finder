@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Loupe from '../images/loupe.png';
 
 const MAX_LENGTH = 17;
-const regex = /^[^0-9]$/;
+const regex = /[^0-9]/g;
 
 class SearchHome extends React.Component {
   constructor(props) {
@@ -18,11 +18,11 @@ class SearchHome extends React.Component {
   }
 
   handleChange(event) {
-    if (event.target.value.length > MAX_LENGTH) {
-      return;
+    if (regex.test(event.target.value)) {
+      event.target.value = '';
     }
 
-    if (regex.test(event.target.value)) {
+    if (event.target.value.length > MAX_LENGTH) {
       return;
     }
 

@@ -1,0 +1,9 @@
+.podiumOfTop {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.titlePodium {
+  text-align: center;
+  margin: 40px auto;
+}
