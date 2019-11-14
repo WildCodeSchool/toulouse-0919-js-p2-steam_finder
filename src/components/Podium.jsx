@@ -20,32 +20,42 @@ const Podium = () => {
       })
       .then(response => response.data.response.games)
       .then(data => {
-        const topArray = data.map(top => ({
-          appid: top.appid,
-          playtime_forever: top.playtime_forever,
-          name: top.name,
-          img_logo_url: top.img_logo_url
-        }));
+        if (data) {
+          const topArray = data.map(top => ({
+            appid: top.appid,
+            playtime_forever: top.playtime_forever,
+            name: top.name,
+            img_logo_url: top.img_logo_url
+          }));
 
-        const sortedByTime = topArray.sort(function(a, b) {
-          return b.playtime_forever - a.playtime_forever;
-        });
+          const sortedByTime = topArray.sort(function(a, b) {
+            return b.playtime_forever - a.playtime_forever;
+          });
 
-        const goodTop = [];
-        for (let i = 0; i < 3; i++) {
-          goodTop.push(sortedByTime[i]);
+          const goodTop = [];
+          for (let i = 0; i < 3; i++) {
+            goodTop.push(sortedByTime[i]);
+          }
+
+          setTopGames(goodTop);
         }
+      })
 
-        setTopGames(goodTop);
-      });
+      .catch(() => setTopGames(null));
   }
 
   useEffect(() => getTopGames(), []);
+  const displayTopGames = topGames ? (
+    <GamesForPodium listForPodium={topGames} />
+  ) : (
+    'No top games accessibility'
+  );
+
   return (
     <div>
       <h1 className="titlePodium">Top Games</h1>
       <div>
-        <div className="podiumOfTop">{topGames && <GamesForPodium listForPodium={topGames} />}</div>
+        <div className="podiumOfTop">{displayTopGames}</div>
       </div>
     </div>
   );
