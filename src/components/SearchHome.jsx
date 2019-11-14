@@ -18,12 +18,11 @@ class SearchHome extends React.Component {
   }
 
   handleChange(event) {
-    if (event.target.value.length > MAX_LENGTH) {
-      return;
-    }
-
     if (regex.test(event.target.value)) {
       event.target.value = '';
+    }
+    if (event.target.value.length > MAX_LENGTH) {
+      return;
     }
 
     this.setState({ playerIds: event.target.value });
