@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Wallpoet&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 .avatar_Button {
-  display: block;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: row;
@@ -17,11 +16,20 @@
   width: 298px;
   height: 94px;
   border-radius: 10px;
+  padding-left: 23px;
+  justify-content: flex-end;
+}
+.avatar-button {
+  display: flex;
+  align-items: center;
+  margin-top: 50%;
+}
+.avatar-off {
+  display: none;
 }
 .avatar-image {
-  width: 38x;
-  height: 38px;
-  margin-right: 20px;
+  width: 20px;
+  margin-right: 5px;
 }
 .error-message {
   display: block;
@@ -48,8 +56,6 @@
     border-radius: none;
   }
   .avatar-image {
-    width: 64x;
-    height: 64px;
     margin-right: 20px;
   }
 }

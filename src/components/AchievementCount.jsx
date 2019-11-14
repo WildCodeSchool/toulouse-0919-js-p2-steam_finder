@@ -10,11 +10,9 @@ function AchievementCount({ achievement }) {
     );
   }
   return (
-    <div className="achievement-count">
-      <button className="avatar_Button">
-        <img src={Achieved} className="avatar-image" />
-        <p> {achievement.length} Achievements </p>
-      </button>
+
+    <div>
+      <p> {achievement.length}</p>
     </div>
   );
 }
