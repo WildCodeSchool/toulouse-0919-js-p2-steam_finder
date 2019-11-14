@@ -30,10 +30,7 @@ const Players = () => {
 
   useEffect(() => getPlayers(), []);
 
-  return (
-    <div>
-      {redirection ? <Redirect push to="/error-page" /> : <PlayerProfil players={players} />}
-    </div>
+  return <div>{redirection ? <ErrorPage /> : <PlayerProfil players={players} />}</div>;
   );
-};
+
 export default Players;

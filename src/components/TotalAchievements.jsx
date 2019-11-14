@@ -4,7 +4,6 @@ import axios from 'axios';
 import config from './KeySteam';
 import AchievementCount from './AchievementCount';
 import './NbGames.css';
-import Achieved from '../images/Achieved.png';
 
 function TotalAchievements() {
   const { id } = useParams();
@@ -22,16 +21,14 @@ function TotalAchievements() {
       .then(data => {
         const newArr = data.filter(achievement => achievement.achieved);
         setAchievements(newArr);
+      })
+      .catch(err => {
+        setAchievements('error');
       });
   }
   useEffect(() => GetAchievements(), []);
 
-  return (
-    <div className="avatar_Button">
-      <img src={Achieved} className="avatar-image" />
-      {achievements && <AchievementCount achievement={achievements} />}
-    </div>
-  );
+  return <div>{achievements && <AchievementCount achievement={achievements} />}</div>;
 }
 
 export default TotalAchievements;
