@@ -34,7 +34,7 @@ const ListOfGames = () => {
   }, []);
 
   return (
-    <div key={ownedGames.appid}>
+    <div className="stylegame" key={ownedGames.appid}>
       <h1 className="gameTitle">Games list</h1>
       <div key={ownedGames.name} className="wrapGames">
         {ownedGames && <GamesList ownedGames={ownedGames} />}

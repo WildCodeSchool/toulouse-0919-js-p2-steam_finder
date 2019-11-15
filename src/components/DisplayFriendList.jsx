@@ -28,7 +28,7 @@ const DisplayFriendList = () => {
   }, []);
 
   return (
-    <div>
+    <div className="stylepage">
       <h1 className="friendTitle">Friend list</h1>
       <div>
         <SearchBarFL />

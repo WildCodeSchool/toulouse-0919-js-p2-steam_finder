@@ -17,7 +17,6 @@
   height: 94px;
   border-radius: 10px;
   padding-left: 23px;
-  justify-content: flex-end;
 }
 .avatar-button {
   display: flex;
@@ -28,7 +27,7 @@
   display: none;
 }
 .avatar-image {
-  width: 20px;
+  width: 1.5em;
   margin-right: 5px;
 }
 .error-message {
@@ -56,6 +55,7 @@
     border-radius: none;
   }
   .avatar-image {
-    margin-right: 20px;
+    margin-right: 5px;
+    width: 2em;
   }
 }

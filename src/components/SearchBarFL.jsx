@@ -38,9 +38,10 @@ class SearchBarFL extends React.Component {
         <form className="form" onSubmit={this.handleSearch}>
           <input
             type="text"
-            id="search-bar"
+            className="search-bar"
             value={this.state.playerIds}
             onChange={this.handleChange}
+            placeholder=" Enter an Id number"
           />
           <Link className="linkButton" to={`/players/${this.state.playerIds}`}>
             <button className="searchButton" type="submit" onSubmit={this.handleSearch}>

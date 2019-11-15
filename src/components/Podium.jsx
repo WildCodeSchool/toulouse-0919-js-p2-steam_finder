@@ -44,7 +44,9 @@ const Podium = () => {
       .catch(() => setTopGames(null));
   }
 
-  useEffect(() => getTopGames(), []);
+  useEffect(() => {
+    getTopGames();
+  }, []);
   const displayTopGames = topGames ? (
     <GamesForPodium listForPodium={topGames} />
   ) : (
@@ -52,7 +54,7 @@ const Podium = () => {
   );
 
   return (
-    <div>
+    <div className="sectionPodium">
       <h1 className="titlePodium">Top Games</h1>
       <div>
         <div className="podiumOfTop">{displayTopGames}</div>
